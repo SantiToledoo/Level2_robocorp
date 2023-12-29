@@ -43,11 +43,13 @@ Fill the form
     Click Element
     ...    //*[@id="id-body-${order}[Body]"]
     Input Text    
-    ...    //*[@name="1702496419677"]
+    ...    xpath:/html/body/div/div/div[1]/div/div[1]/form/div[3]/input
     ...    ${order}[Legs]
     Input Text    
     ...    //*[@id="address"]    
     ...    ${order}[Address]
+    Scroll Element Into View    
+    ...    //*[@id="order"]
     Click Button
         ...    //*[@id="order"]
     Click Button
